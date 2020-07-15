@@ -1,0 +1,89 @@
+<header class="header">
+    <div class="content hd-container">
+        <div class="hd-logo"><a href="#"><img src="image/viet/logo.png" alt="anh"/></a> </div>
+        <div class="menu">
+            <ul class="hd-list-menu">
+                <li class=""><a href="/" style="border-bottom: 2px solid red; padding-bottom: 5px;">Trang chủ</a></li>
+                <li class="hd-menu"><a href="clubs">Câu lạc bộ</a>
+                    <ul class="Dropdown list-place">
+                        <li><a href="#">TP. Hồ Chí Minh</a></li>
+                        <li><a href="#">TP. Hà Nội</a> </li>
+                        <li><a href="#">Đà Nẵng</a> </li>
+                        <li><a href="#">Bình Dương</a> </li>
+                        <li><a href="#">Biên Hòa</a> </li>
+                        <li><a href="#">Nha Trang</a> </li>
+                        <li><a href="#">Vũng Tàu</a> </li>
+                        <li><a href="#">Cần Thơ</a> </li>
+                    </ul>
+                </li>
+                <li class="hd-menu"><a href="#">Dịch Vụ</a>
+                    <ul class="Dropdown list-service" style="width: 200px">
+                        <li><a href="#">Group Fitness</a></li>
+                        <li><a href="#">Giảm Căng Cơ</a></li>
+                        <li><a href="#">Dance</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Huấn Luyện Cá Nhân</a></li>
+                        <li><a href="#">PTX</a></li>
+                        <li><a href="#">Kickfit/MMA</a></li>
+                        <li><a href="#">Giảm Cân</a></li>
+                    </ul>
+                </li>
+                <li class="hd-menu"><a href="#">Blog</a>
+                    <ul class="Dropdown list-blog">
+                        <li><a href="#">Blog Trang Chủ</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Giảm Cân</a></li>
+                        <li><a href="#">Bài Tập Nam</a></li>
+                        <li><a href="#">Bài Tập Nữ</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">GroupX/Dance</a></li>
+                        <li><a href="#">Dinh Dưỡng</a></li>
+                        <li><a href="#">Khỏe & Đẹp</a></li>
+                        <li><a href="#">Cộng Đồng</a></li>
+                    </ul>
+                </li>
+                <li class="hd-menu"><a href="#">Hội Viên</a>
+                    <ul class="Dropdown list-member" style="width: 250px">
+                        <li><a href="#">Hội Viên California & Yoga</a> </li>
+                        <li><a href="#">Hội Viên Centuryon</a> </li>
+                        <li><a href="#">Hội Viên Doanh Nghiệp</a> </li>
+                        <li><a href="#">Ữu Đãi Hội Viên</a> </li>
+                        <li><a href="#">Về Chúng Tôi</a> </li>
+                        <li><a href="#">Câu Chuyện Thành Công</a> </li>
+                    </ul>
+                </li>
+                <li style="margin: 0 20px"><a href="#">Lịch Học</a></li>
+                <li><a href="#">Góp ý - Phản Hồi</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<script type="text/javascript" src="libs/nivo-slider/demo/scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="libs/nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="Js/header.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            effect:'random',
+            slices: 15,
+            boxCols: 8,
+            boxRows: 4,
+            animSpeed: 500,
+            pauseTime: 6000,
+            startSlide: 0,
+            directionNav:true,
+            controlNav:true,
+            controlNavThumbs:false,
+            pauseOnHover:true,
+            manualAdvance:false,
+            prevText:'Prev',
+            nextText:'Next',
+            randomStart:false,
+            beforeChange:function(){},
+            afterChange:function(){},
+            slideshowEnd:function(){},
+            lastSlide:function(){},
+            afterLoad:function(){}
+        });
+    });
+</script>

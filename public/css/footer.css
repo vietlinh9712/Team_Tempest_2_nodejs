@@ -1,0 +1,254 @@
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer .member{
+    width: 100%;
+    height: 100%;
+}
+footer image{
+    max-width: 100%;
+}
+
+footer .algin-center{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+footer .col{
+    width: 25%;
+    height: 600px;
+    color: white;
+    text-align: center;
+    float: left;
+}
+.ad{
+    background-image: url("../image/bg-celeb.jpg");
+    background-color: black;
+    background-size: cover;
+    margin: 0 auto;
+}
+footer .ad1{
+    margin: 50px auto;
+}
+
+footer .ad2>a>img,.ad1>a>img{
+    border: solid 3px dimgrey;
+    border-radius: 50%;
+}
+footer .ad1 a img:hover{
+    border: solid 3px red;
+    border-radius: 50%;
+}
+footer .ad2 a img:hover{
+    border: solid 3px red;
+    border-radius: 50%;
+}
+
+footer .ad2{
+    margin: 50px auto;
+}
+footer .cmt{
+    margin-top: 10px;
+}
+footer .ad1 a{
+    text-decoration: none;
+    color: darkgrey;
+}
+footer .ad2 a{
+    text-decoration: none;
+    color: darkgrey;
+}
+footer .ad1 a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer .ad2 a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer .col{
+    color: darkgrey;
+}
+footer .f2{
+    font-size: 30px;
+    font-weight: 700;
+    float: left;
+    width: 100%;
+}
+
+footer .f4{
+    background-color: #272727;
+}
+
+footer .wrap-news-list {
+    color: #de2528;
+    list-style: square;
+    font-size: 18px;
+    padding-left: 0;
+}
+footer .wrap-news-list li {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+    position: relative;
+}
+footer .wrap-news-list li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-color: #de2528;
+}
+footer .wrap-news-list span a {
+    color: #7b7b7b;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+
+footer .contact a{
+    text-decoration: none;
+}
+footer .contact a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+footer .ds a{
+    text-decoration: none;
+}
+footer .ds a:hover{
+    text-decoration: underline;
+}
+footer .hotline a{
+    color: #dc2128;
+    font-size: 30px;
+    padding: 0 0 5px;
+    border-top: 2px solid #6c6c6c;
+    margin-top: 10px;
+    display: inline-block;
+    border-bottom: 2px solid #6c6c6c;
+    font-family: utm_avobold,sans-serif;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+footer .hotline a:hover{
+    text-decoration: none;
+    color: red;
+}
+footer .slogan{
+    margin-top: 20px;
+    color:#7b7b7b ;
+}
+
+footer .btns{
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5%;
+    background: linear-gradient(to right,#e8353c 50%,#e10000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+footer .f5{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-top: 40px;
+}
+footer .logo{
+    width: 16.6%;
+    float: left;
+}
+footer .logo img{
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin: 20px;
+}
+footer .f5 img{
+    max-width: 100%;
+}
+
+footer .icon{
+    font-size: 50px;
+}
+footer .icon i{
+    text-align: center;
+    padding-right:50px ;
+}
+footer .end{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    float: left;
+    color: black;
+}
+footer .redline{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    float: left;
+    border: none;
+}
+footer .line{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    border: none;
+    margin: 20px auto;
+    text-align: center;
+}
+
+footer .name input[type=text]{
+    padding-left: 40px;
+    position: relative;
+}
+
+footer .phone input[type=text]{
+    padding-left: 40px;
+    position: relative;
+}
+footer .not-active {
+    pointer-events: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 640px) {
+    .text-only {
+        display: inline-block !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* .home-page .owl-theme.has-arrow-nav .owl-nav .owl-prev{
+        left:0;
+    }
+    .home-page .owl-theme.has-arrow-nav .owl-nav .owl-next{
+        right: 0;
+    } */
+}
+@media screen and (max-width: 1024px){
+    .container-fluid.page{
+        top:29px !important;
+    }
+}

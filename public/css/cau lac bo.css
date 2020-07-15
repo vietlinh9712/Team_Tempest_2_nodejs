@@ -1,0 +1,419 @@
+a{
+    text-decoration: none;
+    color: transparent;
+}
+.margin-top{
+    margin-top: 80px;
+}
+
+.wrap-select .select-local-of-district:first-child{
+    display: block;
+}
+
+.wrap-select .select-local-of-district{
+    display: none;
+}
+
+.wrap-select{
+    max-width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-all-place{
+    background-color: #ececec;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.portfolio-items{
+    background-color: white;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.format-title-in-item>h3{
+    height: 18%;
+    color: #f23737;
+    text-transform: capitalize;
+}
+
+.format-img-in-items{
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.format-content-in-item{
+    height: 140px;
+    padding: 10px;
+    display: block;
+}
+
+.format-content-in-item>h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.format-btn-in-item{
+    width: 100%;
+    height: 18%;
+    font-size: 16px;
+    font-weight: normal;
+    background: none;
+    text-align: left;
+    border: 1px solid transparent;
+    padding: 0.8em 1em;
+    display: inline-block;
+    color: white;
+    position: relative;
+    transition:color 0.5s ease;
+    z-index: 0;
+}
+
+.format-btn-in-item:hover {
+    color:white;
+    text-decoration: none;
+}
+
+
+.format-btn-in-item::after {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transform-origin:left;
+    transition:width 0.5s ease;
+    z-index:-1;
+}
+
+.btn-color-red::after{
+    background-color: #fc2a2a;
+    border: 1px solid #fc2a2a;
+}
+
+.btn-color-grey::after {
+    background-color: #585757;
+    border: 1px solid #585757;
+}
+
+.format-btn-in-item:hover::after{
+    width: 100%;
+}
+
+.btn-color-red{
+    background-color: #ef0000;
+}
+
+.btn-color-grey{
+    background-color: #444444;
+}
+
+.wrap-all-trademark{
+    width: 100%;
+    display: block;
+    height: auto;
+    background-image: url("../image/viet/clubs/background.jpg");
+}
+
+.title-trademark-clubs>h2{
+    font-size: 2.2em;
+    font-weight:700;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.title-trademark-clubs>h3{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.underlined-title{
+    width: 70px;
+    height: 5px;
+    margin: 0 auto 20px auto;
+    background-color: red;
+}
+
+.frame-display-photo{
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-display{
+    z-index: 8;
+    position: relative;
+}
+
+.img-hover{
+    position: absolute;
+    z-index: 9;
+}
+
+.portfolio-item-clubs{
+    width: 100%;
+    height:  450px;
+    overflow: hidden;
+}
+
+.content-under-img-clubs{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.content-in-clubs{
+    overflow: hidden;
+    height: 90px;
+    transition: all 200ms;
+}
+
+.content-under-img-clubs>.content-in-clubs>p{
+    font-weight: 500;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.opaciti-content{
+    width: 100%;
+    height: 80px;
+    padding: 50px 10px 5px 5px;
+    background-image: linear-gradient(to top, rgba(210, 210, 210, 0.7), rgba(203, 202, 202, 0.7), rgba(215, 214, 214, 0.3), rgba(246, 244, 244, 0.3));
+    position: absolute;
+    top: 40px;
+}
+
+.opaciti-content>a{
+    font-size: 1.3em;
+    text-align: left;
+    color: black;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.opaciti-content>a:hover{
+    color: grey;
+}
+
+section>.contain-background-img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url("../image/viet/clubs/background-resign.jpg");
+}
+
+.wrap-resign h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #d82222;
+}
+
+.fa-user,.fa-phone-square,.fa-map-marker-alt{
+    color: #db2128;
+    font-size: 1.3em;
+    background-color: #fff;
+}
+
+.main .fa-map-marker-alt{
+    padding: 0 1px;
+}
+
+.footer .form-control,.main .form-control{
+    border-left: none !important;
+    box-shadow: none !important;
+}
+
+.main .form-control{
+    color: #9999a6;
+}
+
+.footer .form-control:focus,.main .form-control:focus{/*set border of input no change color when click*/
+    border-bottom: 1px solid #ccc !important;
+    border-top: 1px solid #ccc !important;
+    border-left: none !important;
+    border-right: 1px solid #ccc !important;
+
+}
+
+.footer .input-group-addon,.main .input-group-addon{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: none !important;
+}
+
+
+.wrap-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-input>.form-group{
+    width: 80%;
+}
+
+.wrap-input,.form-group .set-margin{
+    margin: 10px 0;
+}
+
+.wrap-input .format-btn-resign{
+    font-size: 1.5em;
+    margin: 20px;
+    transition: all 500ms;
+}
+
+.wrap-input .format-btn-resign:hover{
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    margin: 50px 0;
+}
+
+footer .wrap-footer{
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-content-footer{
+    width: 85%;
+}
+
+.wrap-footer h3{
+    color: white;
+    font-size: 1.5em;
+}
+
+.wrap-item-footer>a{
+    color: #7b7b7b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.wrap-content-footer{
+    padding: 30px 0;
+}
+
+.wrap-item-footer>a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.wrap-content-footer ul li{
+    list-style: square;
+    color: red;
+    font-size: 20px;
+}
+
+.margin-bottom-footer{
+    margin-bottom: 20px;
+}
+
+.footer .format-hotline{
+    font-size: 2.5em;
+    font-weight: 700;
+    border-top: 2px solid #6c6c6c;
+    border-bottom: 2px solid #6c6c6c;
+    line-height: 2em;
+    color: #dc2128;
+    padding: 5px 0;
+    letter-spacing: 5px;
+}
+
+.footer .wrap-icons{
+    width: 50%;
+    height: 60px;
+}
+
+.footer .icon-footer{
+    border: 2px solid #6c6c6c;
+    border-radius: 100%;
+    float: left;
+}
+
+.footer .icon-fb{
+    padding: 7px 14px;
+    margin-right: 10px;
+}
+
+.footer .fa-facebook-f{
+    font-size: 30px;
+    color: #6c6c6c;
+}
+
+.footer .fa-youtube{
+    font-size: 30px;
+    color: #6c6c6c;
+}
+.footer .icon-youtube{
+    padding: 7px;
+}
+
+.footer .icon-footer:hover{
+    border: 2px solid red;
+}
+
+.footer .icon-footer:hover>.fa-facebook-f,.icon-footer:hover>.fa-youtube{
+    color: red;
+}
+
+.footer p{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer .set-border-for-resign{
+    border: 1px solid red;
+    background-color: #303030;
+}
+
+.footer .warp-form-resign>h4{
+    margin-left: 10%;
+    line-height: 1.8em;
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.footer .warp-form-resign>h4::after{
+    content: "";
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    background: url("../image/viet/clubs/icon-free.png");
+}
+
+.footer .set-height-input,.main .set-height-input{
+    height: 43px;
+    font-size: 1.3em;
+}
+
+.footer .wrap-input .format-btn-resign{
+    margin: 15px 0 !important;
+}
+
+.footer .form-group{
+    margin: 0;
+}
+
+.set-display-select{
+    display: none;
+}

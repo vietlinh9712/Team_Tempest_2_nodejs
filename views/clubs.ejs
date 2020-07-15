@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head")%>
+    <link rel="stylesheet" type="text/css" href="css/cau%20lac%20bo.css">
+    <title>Câu Lạc Bộ</title>
+</head>
+<body>
+<%- include("header")%>
+<section class="main1">
+    <div class="container-fluid">
+        <div class="row banner-top">
+            <div class="col margin-top">
+                <img src="image/viet/clubs/anhbia.jpg" alt="anhbia"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col form-group">
+                <div class="wrap-select">
+                    <div class="col-sm-2 col-xs-4 text-right">
+                        <label>Chọn Thành Phố</label>
+                    </div>
+                    <div class="col-sm-3 col-xs-8">
+                        <select name="select" id="select-city" class="form-control select-local">
+                            <option value="">Chọn Thành Phố</option>
+                            <option value="hochiminh">Hồ Chí Minh</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="binhduong">Bình Dương</option>
+                            <option value="bienhoa">Biên Hoà</option>
+                            <option value="nhatrang">Nha Trang</option>
+                            <option value="vungtau">Vũng Tàu</option>
+                            <option value="cantho">Cần Thơ</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2 col-xs-4 text-right">
+                        <label>Chọn Quận</label>
+                    </div>
+                    <div class="col-sm-3 col-xs-8">
+                        <select id="select-district" class="form-control select-local-of-district">
+                            <option>Chọn quận</option>
+                            <option>Vui lòng chọn thành phố trước</option>
+                        </select>
+                        <select id="select-district-hcm" class="form-control select-local-of-district">
+                            <option value="">Chọn Quận</option>
+                            <option value="quan1">Quận 1</option>
+                            <option value="quan2">Quận 2</option>
+                            <option value="quan3">Quận 3</option>
+                            <option value="quan4">Quận 4</option>
+                            <option value="quan5">Quận 5</option>
+                            <option value="quan6">Quận 6</option>
+                            <option value="quan7">Quận 7</option>
+                            <option value="quan11">Quận 11</option>
+                            <option value="phunhuan">Quận Phú Nhuận</option>
+                            <option value="binhthanh">Quận Bình Thạnh</option>
+                            <option value="tanbinh">Quận Tân Bình</option>
+                            <option value="govap">Quận Gò Vấp</option>
+                            <option value="thuduc">Quận Thủ Đức</option>
+                            <option value="binhtan">Quận Bình Tân</option>
+                            <option value="tanphu">Quận Tân Phú</option>
+                        </select>
+                        <select id="select-district-hanoi" class="form-control select-local-of-district">
+                            <option value="">Chọn Quận</option>
+                            <option value="hadong">Quận Hà Đông</option>
+                            <option value="hoankiem">Quận Hoàn Kiếm</option>
+                            <option value="haibatrung">Quận Hai Bà Trưng</option>
+                            <option value="longbien">Quận Long Biên</option>
+                            <option value="caugiay">Quận Cầu Giấy</option>
+                            <option value="thanhxuan">Quận Thanh Xuân</option>
+                            <option value="tayho">Quận Tây Hồ</option>
+                            <option value="namtuliem">Quận Nam Từ Liêm</option>
+                        </select>
+                        <select id="select-district-danang" class="form-control select-local-of-district">
+                            <option value="thanhkhe">Quận Thanh Khê</option>
+                        </select>
+                        <select id="select-district-binhduong" class="form-control select-local-of-district">
+                            <option value="phuongphuloi">Phường Phú Lợi</option>
+                        </select>
+                        <select id="select-district-bienhoa" class="form-control select-local-of-district">
+                            <option value="phuongquyetthang">Phường Quyết Thắng</option>
+                        </select>
+                        <select id="select-district-nhatrang" class="form-control select-local-of-district">
+                            <option value="phuongloctho">Phường Lộc Thọ</option>
+                        </select>
+                        <select id="select-district-vungtau" class="form-control select-local-of-district">
+                            <option value="phuong9">Phường 9</option>
+                        </select>
+                        <select id="select-district-cantho" class="form-control select-local-of-district">
+                            <option value="ninhkieu">Quận Ninh Kiều</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-danger">Tìm Kiếm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-all-place row" id="hochiminh">
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan1">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 1</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận 4, Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quan2">
+                <div class="col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 2</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-3.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>Số 12 Quốc Hương, P.Thảo Điền, Quận 2, TP. HCM<br>
+                                (028) 7107 9899</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 2</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-4.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>Thảo Điền Pearl, Tầng 3, Số 12 Quốc Hương, P. Thảo Điền, Quận 2, Tp. Hồ Chí Minh<br>
+                                (028) 1122 9988</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="quan3">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 3</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-5.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận 4, Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan4">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 4</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-6.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận 4, Hồ Chí Minh<br>
+                            (028) 1122 5588</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan5">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 5</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-7.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tầng 5 Hùng Vương Plaza, 126 Hùng Vương , Quận 5<br>
+                            (028) 1122 5324</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan6">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 6</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-8.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Viet Market, Tầng 3, 634Bis Pham Van Chi Street, P.8, Q.6<br>
+                            (028) 1122 4564</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan7">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 7</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tầng 4 SC VivoCity, 1058 Nguyễn Văn Linh, Khu Phố 1, Phường Tân Phong, Quận 7, TP.HCM<br>
+                            (028) 1122 7895</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="quan11">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận 11</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-10.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Lầu 5, Parkson Flemington, 184 Lê Đại Hành, Phường 15, Quận 11, TP.HCM.<br>
+                            (028) 1125 4564</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="phunhuan">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Phú Nhuận</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-11.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Cali Tower, 464-466-468 Phan Xích Long, P.2, Q. Phú Nhuận, TP.HCM<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="binhthanh">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Bình Thạnh</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-12.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>Pearl Plaza, Tầng 3, 561A Điện Biên Phủ, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh<br>
+                                (028) 1122 5544</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Bình Thạnh</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-12.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>The Landmark 81, Lầu 3, 772 Điện Biên Phủ, P.22, Quận Bình Thạnh, Tp. Hồ Chí Minh.<br>
+                                (028) 1122 5544</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>v
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="tanbinh">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Tân Bình</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-13.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Pico Plaza, 20 Cộng Hoà, P.12, Quận Tân Bình<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" id="govap">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Gò Vấp</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-14.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Sài Gòn Mall, Tầng 3 2A Phan Văn Trị, P.10, Quận Gò Vấp, Tp. Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="thuduc">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Thủ Đức</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-12.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận 4, Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="binhtan">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Bình Tân</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-6.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận Bình Tân, Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="tanphu">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Tân  Phú</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-14.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>The GoldView, Tầng 3, 346 Bến Vân Đồn, P.1, Quận Tân Phú, Hồ Chí Minh<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="hanoi" class="wrap-all-place row">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="hadong">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Hà Đông</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hanoi-1.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>MAC Plaza, Tầng 5-6, 10 Trần Phú, P.Mộ Lao, Quận Hà Đông, Hà Nội<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hoankiem">
+                <div class="col-md-3 col-sm-6 col-xs-12 " >
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Hoàn Kiếm</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-3.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>Capital Building, Tầng 2, 41 Hai Bà Trưng, P.Trần Hưng Đạo, Quận Hoàn Kiếm, Hà Nội<br>
+                                (028) 7107 9899</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-items">
+                        <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Hoàn Kiếm</h3></div>
+                        <div class=" col-sm-12 format-img-in-items">
+                            <a href="#">
+                                <img class="img-responsive" src="image/viet/clubs/tp-hcm-4.png" alt="anh-phongtap-hcm-1"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 text-center format-content-in-item">
+                            <h4>TTTM Hàng Da Plaza, Tầng 4-5, Số 1 Hàng Da, Quận Hoàn Kiếm, Hà Nội<br>
+                                (028) 1122 9988</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="dongda">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Đống Đa</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hanoi-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Sky City, Tầng M, 88 Láng Hạ, P.Láng Hạ, Quận Đống Đa, Hà Nội<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="haibatrung">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Hai Bà Trưng</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hanoi-4.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Time City Megamall, Tòa nhà T18, 458 Minh Khai, P. Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội<br>
+                            (028) 1122 5588</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="longbien">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Long Biên</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hanoi-5.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Mipec Riverside, Tầng 6, số 2 phố Long Biên II, P. Ngọc Lâm, Quận Long Biên, Hà Nội<br>
+                            (028) 1122 5324</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="caugiay">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Cầu Giấy</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-8.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tầng 3 & Tầng 4, Tòa nhà Long Giang, Trung tâm điện máy Pico,
+                            173 Xuân Thủy, Quận Cầu Giấy, Hà Nội<br>
+                            (028) 1122 4564</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="thanhxuan">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Thanh Xuân</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hanoi-3.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tầng 2, R3, Royal City, Mega Vincom, 72A Nguyễn Trãi, P.Thượng Đình, Quận Thanh Xuân, Hà Nội<br>
+                            (028) 1122 7895</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="tayho">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Tây Hồ</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-10.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tầng 2 & 3 , Somerset West Point, Số 2 Tây Hồ, Quảng An, Tây Hồ, Hà Nội<br>
+                            (028) 1125 4564</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="namtuliem">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Quận Nam Từ Liêm</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-11.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Handico Tower, Tầng 4, Mễ Trì, phố Phạm Hùng, Quận Nam Từ Liêm, Hà Nội<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="danang">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="thanhkhe">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Đà Nẵng</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-11.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tòa Nhà Bưu Điện Thành Phố, Tầng 3, 271 Nguyễn Văn Linh, P.Vĩnh Trung, Quận Thanh Khê, Đà Nẵng<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="binhduong">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="phuongphuloi">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Bình Dương</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Bình Dương Square, Tầng 3, 1 Phú Lợi, P. Phú Lợi, TP. Thủ Dầu Một, Bình Dương<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="bienhoa">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="phuongquyetthang">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Biên Hoà</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Pegasus Plaza, Tầng 4 & 5, 53-55 Võ Thị Sáu, P. Quyết Thắng, TP. Biên Hòa, Đồng Nai<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="nhatrang">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="phuongloctho">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Nha Trang</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Tòa nhà Nha Trang Center, Tầng 4, 20 Trần Phú, Phường Lộc Thọ, TP. Nha Trang, Khánh Hòa<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="vungtau">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="phuong9">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Vũng Tàu</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Lapen Centre, 33A Đường 30/4, Phường 9, Thành phố Vũng Tàu, Bà Rịa, Vũng Tàu<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrap-all-place row" id="cantho">
+            <div class="col-md-3 col-sm-6 col-xs-12 " id="ninhkieu">
+                <div class="portfolio-items">
+                    <div class="col-sm-12 text-center format-title-in-item"><h3>Cần Thơ</h3></div>
+                    <div class=" col-sm-12 format-img-in-items">
+                        <a href="#">
+                            <img class="img-responsive" src="image/viet/clubs/tp-hcm-2.png" alt="anh-phongtap-hcm-1"/>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 text-center format-content-in-item">
+                        <h4>Vincom Xuân Khánh, Tầng 3, 209 Đường 30/4, P.Xuân Khánh, Quận Ninh Kiều, Cần Thơ<br>
+                            (028) 1122 5544</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class=" btn-color-grey text-left format-btn-in-item"><i class="fas fa-search"></i><span>  Xem Chi Tiết</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="#" class="btn-color-red text-left format-btn-in-item"><i class="fas fa-long-arrow-alt-right"></i><span>   Đăng Kí</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main">
+    <div class="wrap-all-trademark">
+        <div class="title-trademark-clubs text-center">
+            <h2>TẬP HỢP NHỮNG THƯƠNG HIỆU HÀNG ĐẦU</h2>
+            <h3>VỀ THỂ HÌNH VÀ SỨC KHỎE</h3>
+            <div class="underlined-title"></div>
+        </div>
+        <div class="container wrap-all-portfolio-item-clubs">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-item-clubs">
+                        <div class="frame-display-photo">
+                            <div class="img-responsive img-display">
+                                <img src="image/viet/clubs/anh2.png" alt="anh phong tap"/>
+                            </div>
+                            <div class="img-responsive img-hover">
+                                <img src="image/viet/clubs/anh5.png" alt="anh hover"/>
+                            </div>
+                        </div>
+                        <div class="content-under-img-clubs">
+                            <div class="content-in-clubs">
+                                <p>Với 25 trung tâm trải rộng khắp 8 thành phố lớn, Tempest Fitness & Yoga là chuỗi CLB thể hình lớn nhất cả nước, mang đến cho hàng trăm ngàn hội viên trải nghiệm tập luyện chuyên nghiệp và thuận tiện nhất suốt hơn 11 năm qua.</p>
+                            </div>
+                            <div class="text-left bottom-left opaciti-content">
+                                <a href="javascript:void(0)">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-item-clubs">
+                        <div class="frame-display-photo">
+                            <div class="img-responsive img-display">
+                                <img src="image/viet/clubs/nen-anh3.png" alt="anh phong tap"/>
+                            </div>
+                            <div class="img-responsive img-hover">
+                                <img src="image/viet/clubs/anh4.png" alt="anh hover"/>
+                            </div>
+                        </div>
+                        <div class="content-under-img-clubs">
+                            <div class="content-in-clubs">
+                                <p>Với không gian tinh tế đậm chất thiền, hệ thống Yoga Plus chính là thiên đường đích thực cho các tín đồ Yoga tại Việt Nam – nơi bạn được trải nghiệm tất cả những lớp học Yoga từ truyền thống đến các bộ môn mới, độc quyền Đông Nam Á</p>
+                            </div>
+                            <div class="text-left bottom-left opaciti-content">
+                                <a href="javascript:void(0)">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-item-clubs">
+                        <div class="frame-display-photo">
+                            <div class="img-responsive img-display">
+                                <img src="image/viet/clubs/nen-anh4.png" alt="anh phong tap"/>
+                            </div>
+                            <div class="img-responsive img-hover">
+                                <img src="image/viet/clubs/anh3.png" alt="anh hover"/>
+                            </div>
+                        </div>
+                        <div class="content-under-img-clubs">
+                            <div class="content-in-clubs">
+                                <p>Được mệnh danh là siêu câu lạc bộ hàng đầu châu Á, hệ thống California Centuryon hội tụ hệ thống những thiết bị hiện đại và dịch vụ đẳng cấp thế giới, đáp ứng mọi nhu cầu tập luyện khắt khe của giới thượng lưu Việt Nam</p>
+                            </div>
+                            <div class="text-left bottom-left opaciti-content">
+                                <a href="javascript:void(0)">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="portfolio-item-clubs">
+                        <div class="frame-display-photo">
+                            <div class="img-responsive img-display">
+                                <img src="image/viet/clubs/anh2.png" alt="anh phong tap"/>
+                            </div>
+                            <div class="img-responsive img-hover">
+                                <img src="image/viet/clubs/anh5.png" alt="anh hover"/>
+                            </div>
+                        </div>
+                        <div class="content-under-img-clubs">
+                            <div class="content-in-clubs">
+                                <p>Phòng tập UFC Gym Việt Nam là thương hiệu mở rộng đầu tiên tại Châu Á của Ultimate Fighting Championship® – giải đấu võ thuật tự do hàng đầu thế giới, đem lại cho bạn cơ hội tập luyện khác biệt: võ tự do, Kichfit/MMA, Muay Thai, nhu thuật đỉnh cao BJJ, …</p>
+                            </div>
+                            <div class="text-left bottom-left opaciti-content">
+                                <a href="javascript:void(0)">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main">
+    <div class="contain-background-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <div class="wrap-resign">
+                        <div class="title-resign text-center">
+                            <h2>Tự do khám phá không gian</h2>
+                            <h1>PHÒNG TẬP GYM VÀ YOGA 5☆</h1>
+                        </div>
+                        <div class="underlined-title"></div>
+                        <div class="wrap-content-in-resign text-center">
+                            <h3>ĐĂNG KÝ TẬP THỬ MIỄN PHÍ</h3>
+                            <h4>Để lại thông tin bên dưới để nhận ưu đãi và tư vấn<br>
+                                từ các chuyên gia trong vòng 24h.</h4>
+                            <div  class="col-md-12 wrap-input text-center">
+                                <form class="form-group" name="form" action="#" method="post">
+                                    <div class="input-group set-margin">
+                                        <span class="input-group-addon set-backgrond-color"><i class="fas fa-user"></i></span>
+                                        <input id="name" type="text" class="form-control set-height-input" name="name" placeholder="Họ Tên">
+                                    </div>
+                                    <div class="input-group set-margin">
+                                        <span class="input-group-addon set-backgrond-color"><i class="fas fa-phone-square"></i></span>
+                                        <input id="phone" type="text" class="form-control set-height-input" name="phone" placeholder="Số Điện Thoại">
+                                    </div>
+                                    <div class="input-group set-margin">
+                                        <span class="input-group-addon set-backgrond-color"><i class="fas fa-map-marker-alt"></i></span>
+                                        <select class="form-control set-height-input" name="location">
+                                            <option>Chọn khu vực bạn sống</option>
+                                            <option>TP.Hồ Chí Minh</option>
+                                            <option>TP.Hà Nội</option>
+                                            <option>TP.Biên Hoà</option>
+                                            <option>TP.Bình Dương</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Nha Trang</option>
+                                            <option>Cần Thơ</option>
+                                            <option>Vũng Tàu</option>
+                                        </select>
+                                    </div>
+                                    <div class="wrap-btn">
+                                        <button type="submit" name="submit" class="btn btn-danger format-btn-resign btn-color-red">Đăng Kí Ngay</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("footer")%>
+<script type="text/javascript" src="Js/clubs.js"></script>
+</body>
+</html>
