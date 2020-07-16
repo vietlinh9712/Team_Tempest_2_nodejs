@@ -52,11 +52,13 @@
                         <form action="#" method="POST" class="form-group">
                             <div class="input-group set-margin">
                                 <span class="input-group-addon set-backgrond-color"><i class="fas fa-user"></i></span>
-                                <input id="name-footer" type="text" class="form-control set-height-input" name="name" placeholder="Họ Tên">
+                                <input id="name-footer" type="text" class="form-control set-height-input" name="name" placeholder="Họ Tên" data-error="Thông tin bắt " required>
+                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="input-group set-margin">
                                 <span class="input-group-addon set-backgrond-color"><i class="fas fa-phone-square"></i></span>
-                                <input id="phone-footer" type="text" class="form-control set-height-input" name="phone" placeholder="Số Điện Thoại">
+                                <input id="phone-footer" type="text" class="form-control set-height-input" name="phone" placeholder="Số Điện Thoại" data-error="Thông tin bắt " required>
+                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="wrap-btn">
                                 <button type="submit" name="submit" class="btn btn-danger format-btn-resign btn-color-red"><a>Đăng Kí Ngay</a></button>
