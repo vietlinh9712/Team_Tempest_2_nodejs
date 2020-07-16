@@ -16,3 +16,11 @@ app.get("/", function (req,res) {
 app.get("/clubs",function (req,res) {
     res.render("clubs");
 })
+
+app.get("/service",function (req,res) {
+    res.render("service");
+})
+
+app.get("/blog",function (req,res) {
+    res.render("blog");
+})

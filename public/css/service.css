@@ -1,0 +1,443 @@
+.service-all{
+    width: 100%;
+    background-image: url("https://www.cfyc.com.vn/images_server/themes/celebration/img/group-fitness-services/group-head-bg.jpg?v=0.3"), url("https://www.cfyc.com.vn/images_server/themes/celebration/img/group-fitness-services/group-bottom-bg.jpg?v=0.3");
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    z-index: 2;
+}
+#con1{
+    margin-bottom: 200px;
+}
+#con2{
+    margin-bottom: 100px;
+}
+#con3{
+    margin-bottom: 100px;
+}
+#con5{
+    margin-bottom: 50px;
+}
+#con6{
+    height: 600px;
+}
+#con7{
+    margin-bottom: 100px;
+}
+.service-header-left{
+    width: 40%;
+    position: relative;
+    top: 50px;
+}
+.service-header-text{
+    font-family: 'cali',sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.service-header-left-1{
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+}
+.service-header-left-2{
+    font-size: 67px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: #fff;
+}
+.service-header-inline{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 40px;
+    border-top: 5px #db2128 solid;
+    display: inline-block;
+}
+.service-header-content p{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.service-sign-up{
+    color: #fff;
+    background-color: #e10000;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    text-transform: uppercase;
+    margin: 40px auto 40px auto;
+    padding: 25px 45px 17px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 400;
+    transition: all .4s;
+    line-height: 1;
+    border: none;
+    outline: 0;
+}
+.service-clicker :hover{
+    color: black;
+    background-color: #f5292f;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+.service-result-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #d92128;
+    text-transform: uppercase;
+}
+.service-result-tab{
+    background-image: url("https://www.cfyc.com.vn/images_server/themes/celebration/img/group-fitness-services/result-item-bg.jpg?v=0.3");
+    width: 30%;
+    height: 334px;
+    float: left;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+    margin: 20px 15px;
+}
+.service-result-tab-quote li{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.service-result-tab-quote li::before{
+    content: '';
+    background: #dc2930;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+.service-ads{
+    width: 455px;
+    color: #fff;
+    background-size: 200% 100%;
+    text-transform: uppercase;
+    margin: 40px auto 40px auto;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 400;
+    transition: all .4s;
+    line-height: 1;
+    border: none;
+    outline: 0;
+    font-size: 22px;
+    padding: 15px 30px;
+    background: #ba262c;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.service-parent{
+    position: relative;
+}
+.B{
+    position: absolute;
+    left: -135%;
+    top: 20px;
+}
+.B :hover{
+    color: black;
+    background-color: #f5292f;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+.main-content{
+    /*top: 100px;*/
+    width: 100%;
+    height: 900px;
+}
+.pt-profile{
+    width: 44%;
+    max-height:600px;
+    float:left;
+    margin: 20px 25px 20px 33px;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+.pt-profile img{
+    width: 50%;
+    height: 348px;
+    float: left;
+}
+.scroll-profile-content{
+    width: 50%;
+    font-size: 15px;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+.name-title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 35px;
+    border-left: 5px solid #DC2930;
+    padding-left: 20px;
+}
+.main-content .name{
+    font-size: 22px;
+    color: #dc2930;
+    width: 160.42px;
+    height: 23px;
+    margin-bottom: 10px;
+}
+.main-content .title {
+    font-size: 12px;
+}
+.main-content .quote li{
+    width: 184.42px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.quote li::before{
+    content: '';
+    background: #dc2930;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+.main-content .profile-content{
+    font-size: 18px;
+    width: auto;
+    height: 311px;
+    position: relative;
+    overflow: auto;
+}
+.scroll-profile-content ::-webkit-scrollbar {
+    width: 5px;
+}
+.scroll-profile-content ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.scroll-profile-content ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.scroll-profile-content ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.quote1{
+    text-align: center;
+}
+.service-vid-text{
+    padding-left: 20px;
+    float: left;
+}
+.vid{
+    float: left;
+}
+.service-vid-text-1{
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    color: #000;
+    font-style: normal;
+}
+.service-vid-text-2{
+    font-size: 48px;
+    font-weight: 500;
+    color: #d92128;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.service-vid-text li {
+    padding-top: 10px;
+    font-size: 16px;
+}
+.service-vid-text li::before{
+    content: '';
+    background: #dc2930;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+.spec p{
+    font-size: 18px;
+    color: #d92128;
+    font-weight: 700;
+    position: relative;
+    margin-top: 20px;
+}
+.spec p::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url("https://www.cfyc.com.vn/images_server/themes/celebration/img/group-fitness-services/icon-special.png?v=0.3") center/contain no-repeat;
+    padding-left: 35px;
+    position: relative;
+}
+.service-footer{
+    text-align: center;
+    width: 35%;
+    float: right;
+    margin-top: 20px;
+}
+#h31{
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #d92128;
+}
+#h32{
+    font-weight: 200;
+    color: #fff;
+    font-size: 22px;
+}
+.try i{
+    font-style: italic;
+    font-size: 21px;
+    color: #d92128;
+    font-weight: 700;
+    position: relative;
+    padding-left: 40px;
+}
+.service-footer-inline{
+    margin-top: 20px;
+    width: 40px;
+    border-top: 5px #db2128 solid;
+    display: inline-block;
+}
+.w3-input, .w3-select{
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+.more-info :hover{
+    color: black;
+    background-color: #f5292f;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#service-sign-up-1{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 20px;
+    width: 590px;
+}
+.service-sport-profile{
+    position: relative;
+    width: 23%;
+    border-radius: 7px;
+    float: left;
+    margin: 10px;
+}
+.service-sport-profile-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlayer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 98%;
+    height: 15%;
+    transition: .5s ease;
+}
+#sport-profile-1:hover .overlayer{
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    background-color: rgba(255, 255, 255, 0.71);
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#sport-profile-2:hover .overlayer{
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+    background-color: rgba(255, 255, 255, 0.71);
+}
+#sport-profile-3:hover .overlayer{
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+    background-color: rgba(255, 255, 255, 0.71);
+}
+#sport-profile-4:hover .overlayer{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.71);
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#sport-profile-5:hover .overlayer{
+    background-color: rgba(255, 255, 255, 0.71);
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#sport-profile-6:hover .overlayer{
+    background-color: rgba(255, 255, 255, 0.71);
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#sport-profile-7:hover .overlayer{
+    background-color: rgba(255, 255, 255, 0.71);
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+#sport-profile-8:hover .overlayer{
+    background-color: rgba(255, 255, 255, 0.71);
+    height: 100%;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
+.overlayer-text{
+    padding: 0 10px;
+
+}
+.overlayer-text-1{
+    font-size: 21px;
+    color: #d92128;
+    font-weight: 700;
+    position: relative;
+    margin-top: 20px;
+}
+.overlayer-text-1 p::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url("https://www.cfyc.com.vn/images_server/themes/celebration/img/group-fitness-services/icon-special.png?v=0.3") center/contain no-repeat;
+    padding-left: 35px;
+    position: relative;
+}
+.overlayer-text-2{
+    font-weight: 700;
+    font-size: 17px;
+}
+.overlayer-text-3{
+    color: #494949;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 5px;
+}
+.overlayer-text-4{
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#trial{
+    position: relative;
+    left: 37.5%;
+    top: 20px;
+}
+#trail :hover{
+    color: black;
+    background-color: #f5292f;
+    box-shadow: 0 0 4px 4px #000;
+    -webkit-box-shadow: 0 0 10px #928e8e;
+}
