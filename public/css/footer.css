@@ -18,7 +18,7 @@ footer .algin-center{
     margin: 0 auto;
 }
 
-footer .col{
+footer .colums{
     width: 25%;
     height: 600px;
     color: white;
@@ -31,6 +31,7 @@ footer .col{
     background-size: cover;
     margin: 0 auto;
 }
+
 footer .ad1{
     margin: 50px auto;
 }
@@ -42,10 +43,12 @@ footer .ad2>a>img,.ad1>a>img{
 footer .ad1 a img:hover{
     border: solid 3px red;
     border-radius: 50%;
+    transition: 0.3s;
 }
 footer .ad2 a img:hover{
     border: solid 3px red;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 footer .ad2{
@@ -65,21 +68,20 @@ footer .ad2 a{
 footer .ad1 a:hover{
     color: white;
     text-decoration: none;
-    font-size: 20px;
 }
 footer .ad2 a:hover{
     color: white;
     text-decoration: none;
-    font-size: 20px;
 }
-footer .col{
+footer .colums{
     color: darkgrey;
 }
 footer .f2{
     font-size: 30px;
     font-weight: 700;
     float: left;
-    width: 100%;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
 footer .f4{
@@ -139,7 +141,6 @@ footer .hotline a{
     margin-top: 10px;
     display: inline-block;
     border-bottom: 2px solid #6c6c6c;
-    font-family: utm_avobold,sans-serif;
     letter-spacing: 3px;
     text-decoration: none;
 }
