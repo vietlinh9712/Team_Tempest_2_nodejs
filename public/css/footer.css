@@ -232,8 +232,14 @@ footer .not-active {
     text-decoration: none;
     color: white;
 }
-
-
+.wrap-btn a{
+    text-decoration: none;
+    color: white;
+}
+footer .wrap-btn a:hover{
+    text-decoration: none;
+    color: #0f0f0f;
+}
 @media screen and (max-width: 640px) {
     .text-only {
         display: inline-block !important;
