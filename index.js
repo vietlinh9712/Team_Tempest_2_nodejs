@@ -24,3 +24,7 @@ app.get("/service",function (req,res) {
 app.get("/blog",function (req,res) {
     res.render("blog");
 })
+
+app.get("/lichhoc",function (req,res) {
+    res.render("lichhoc");
+})

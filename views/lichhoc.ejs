@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Các lớp và thời gian tập/ Trung tâm | Trung tâm thể dục California Fitness & Yoga </title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Js/index1.js"></script>
+    <link rel="stylesheet" href="css/lichhoc.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <%- include("head")%>
+</head>
+<body>
+<%- include("header")%>
+<section>
+    <div class="container-dv col-md-12">
+        <div class="strike">
+            <h2 class="red">
+                CHỌN THÀNH PHỐ CỦA BẠN
+            </h2>
+        </div>
+        <div class="space col-md-4">
+            &nbsp;
+        </div>
+        <!--        <button class="btn btn-default dropdown-toggle" type="button">-->
+        <!--            <a href="#">Chọn Thành Phố</a><i class="fa fa-caret-down"></i></button>-->
+
+
+        <div class="city col-md-4">
+            <div class="custom-select">
+                <ul class="menucities">
+                    <li>
+                        <div class="chontp">
+                            <a href="#">Chọn Thành Phố </a>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="#" onclick="tpHCM()">TP. Hồ Chí Minh</a></li>
+                            <li><a href="#" onclick="tpHN()">Hà Nội</a></li>
+                            <li><a href="#" onclick="danang()">Đà Nẵng</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <script>
+                    $(".menucities > li").bind("mouseenter",function () {
+                        $(".submenu").hide();
+                        // this la li khi dua chuot vao
+                        $(this).children(".submenu").slideDown();
+                    });
+                    $(".menucities > li").bind("mouseleave",function () {
+                        $(".submenu").hide();
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="space col-md-4">
+            &nbsp;
+        </div>
+        <div id="demo" class="tphcm col-md-12">
+            <div class="strike">
+                <h2 class="red">
+                    TP. HỒ CHÍ MINH
+                </h2>
+            </div>
+            <h2 style="text-align:center;color: #db2128;font-weight: 400">Chọn clb bạn tập</h2>
+            <div class="quan col-md-12">
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quanvogap.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN VÒ GẤP<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quanphunhuan.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN PHÚ NHUẬN<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan3.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN 3<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan4.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN 4<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan5.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN 5<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan6.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN 6<br>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo2" class="tphn col-md-12">
+            <div class="strike">
+                <h2 class="red">
+                    Hà Nội
+                </h2>
+            </div>
+            <h2 style="text-align:center;color: #db2128;font-weight: 400">Chọn clb bạn tập</h2>
+            <div class="quan col-md-12">
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quanvogap.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN CẦU GIẤY<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quanphunhuan.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN HAI BÀ TRƯNG<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan3.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN TÂY HỒ<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan4.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN NAM TỪ LIÊM<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan5.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN BẮC TỪ LIÊM<br>
+                        </div>
+                    </a>
+                </div>
+                <div class="q col-md-2">
+                    <a href="#">
+                        <img src="image/quan6.jpg" height="350" width="350"/>
+                        <div class="note">
+                            QUẬN HAI BÀ TRƯNG<br>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo3" class="danang col-md-12">
+            <div class="strike">
+                <h2 class="red">
+                    QUẬN THANH KHÊ
+                </h2>
+            </div>
+            <div class="loc-yoga col-md-6">
+                <img src="image/loc-yoga.png" height="345" width="345"/>
+                <h4 class="text">YOGA</h4>
+                <div class="col-md-12" style="height: 50px;">
+
+                </div>
+                <div class="col-md-12">
+                    <button class="check" onclick="xem()">
+                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
+                    </button>
+                    <div class="lichtap" id="lich">
+                        <ul>
+                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
+                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btnt" type="submit">
+                        <a href="#">ĐĂNG KÍ NGAY</a>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="loc-gruopx col-md-6">
+                <img src="image/loc-groupx.png" height="345" width="345"/>
+                <h4 class="text">GROUP X</h4>
+                <div class="col-md-12" style="height: 50px;">
+
+                </div>
+                <div class="col-md-12">
+                    <button class="check" onclick="xem2()">
+                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
+                    </button>
+                    <div class="lichtap" id="lich2">
+                        <ul>
+                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
+                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btnt" type="submit">
+                        <a href="#">ĐĂNG KÍ NGAY</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="thuonghieu col-md-12" style="margin-top: 50px;">
+            <h3>Các thương hiệu liên kết khác </h3>
+            <hr class="short-red-line">
+
+        </div>
+
+    </div>
+    <div class="branch col-md-12">
+
+        <div class="ufc col-md-3">
+            <img src="image/logo-ufc.png" height="144" width="190"/>
+
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>THẢO ĐIỀN PEARL PLAZA</strong></p>
+                <p class="adress-text">
+                    Tầng 3, 12 Quốc Hương, P. Thảo Điền,<br>
+                    Q. 2, TP.HCM</p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>Aeon Mall Tân Phú</strong></p>
+                <p class="adress-text">
+                    30 Bờ Bao Tân Thắng, P.Sơn Kỳ,<br>
+                    Quận Tân Phú, TP.HCM                            </p>
+            </div>
+        </div>
+
+
+        <div class="yoga col-md-3">
+            <img src="image/logo-yoga.png" height="141" width="214"/>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>Aeon Mall Bình Tân</strong></p>
+                <p class="adress-text">
+                    Tầng 2, số 01 đường số 17A, khu phố 11, P. Bình Trị Đông B, Q. Bình Tân, TP.HCM                            </p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>Thảo Điền Pearl Plaza</strong></p>
+                <p class="adress-text">
+                    Tầng 3, 12 Quốc Hương, P. Thảo Điền,<br>
+                    Q. 2, TP.HCM                            </p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>Tòa nhà Handico</strong></p>
+                <p class="adress-text">
+                    Tầng 4, đường Phạm Hùng, Q. Nam Từ Liêm, Hà Nội                            </p>
+            </div>
+        </div>
+
+        <div class="cen col-md-3">
+            <img src="image/logo-cen.png" height="175" width="156"/>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>SAIGON CENTRE</strong></p>
+                <p class="adress-text">
+                    Lầu 5, 65 đại lộ Lê Lợi, P.Bến Nghé,<br>
+                    quận 1, TP.HCM                            </p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>WEST POINT</strong></p>
+                <p class="adress-text">
+                    Số 2, ĐườngTây Hồ, P. Quảng An,<br>
+                    Q. Tây Hồ, Hà Nội                            </p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>ROYAL CITY</strong></p>
+                <p class="adress-text">
+                    72A Nguyễn Trãi, P. Thượng Đình, <br>
+                    Quận Thanh Xuân, Hà Nội                            </p>
+            </div>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>THE LANDMARK 81</strong></p>
+                <p class="adress-text">
+                    Lầu 3, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, TP.HCM                            </p>
+            </div>
+        </div>
+
+        <div class="kid col-md-3">
+            <img src="image/logo-kid.png" height="167" width="156"/>
+            <div class="wrap-address">
+                <p class="text-uppercase"><strong>CALIKIDS ACADEMY</strong></p>
+                <p class="adress-text">
+                    Tầng 3, 12 Quốc Hương, P. Thảo Điền,<br>
+                    Q. 2, TP.HCM                            </p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons col-sm-3">
+        <a href="http://www.ufcgym.com.vn/" target="_blank"
+           class="cool-btn-cta btn-red hidden-xs">TÌM HIỂU THÊM</a>
+    </div>
+    <div class="buttons col-sm-3">
+        <a href="http://www.yogaplus.vn/" target="_blank"
+           class="cool-btn-cta btn-red hidden-xs">TÌM HIỂU THÊM</a>
+    </div>
+    <div class="buttons col-sm-3">
+        <a href="http://www.centuryon.com/" target="_blank"
+           class="cool-btn-cta btn-red hidden-xs">TÌM HIỂU THÊM</a>
+    </div>
+    <div class="buttons col-sm-3">
+        <a href="http://www.calikids.com.vn/" target="_blank"
+           class="cool-btn-cta btn-red">TÌM HIỂU THÊM</a>
+    </div>
+</section>
+
+<%- include("footer")%>
+
+<script type="text/javascript" src="Js/index1.js"></script>
+<script type="text/javascript" src="libs/nivo-slider/demo/scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="libs/nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="Js/jQuery.js"></script>
+
+<script>
+    $(".selectcity > li").bind("mouseenter",function () {
+        $(".cityname").hide();
+        // this la li khi dua chuot vao
+        $(this).children(".cityname").slideDown();
+    });
+    $(".selectcity > li").bind("mouseleave",function () {
+        $(".cityname").hide();
+    });
+</script>
+
+<script type="text/javascript">
+    function tpHCM() {
+        document.getElementById("demo").style.display = "block";
+        document.getElementById("demo2").style.display = "none";
+        document.getElementById("demo3").style.display = "none";
+    }
+    function tpHN() {
+        document.getElementById("demo2").style.display = "block";
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("demo3").style.display = "none";
+    }
+    function danang() {
+        document.getElementById("demo3").style.display = "block";
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("demo2").style.display = "none";
+    }
+</script>
+<script type="text/javascript">
+    function xem() {
+        document.getElementById("lich").style.display = "block";
+    }
+</script>
+<script type="text/javascript">
+    function xem2() {
+        document.getElementById("lich2").style.display = "block";
+    }
+</script>
+</body>
+</html>
