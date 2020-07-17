@@ -355,6 +355,7 @@ hr.short-red-line{
 .lichtap{
     border: solid 1px black;
     border-radius: 5px;
+    margin: 0 50px;
 }
 .lichtap a{
     text-decoration: none;
@@ -411,4 +412,7 @@ hr.short-red-line{
 }
 .chontp a{
     color: white;
+}
+.list-unstyled{
+    font-size: 12px;
 }
