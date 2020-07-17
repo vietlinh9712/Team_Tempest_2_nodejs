@@ -33,7 +33,7 @@
                 <ul class="menucities">
                     <li>
                         <div class="chontp">
-                            <a href="#">Chọn Thành Phố </a>
+                            <a href="#">Chọn Thành Phố <i class="fa fa-caret-down" style="color: red;font-size: 20px;margin-left: 10px;"></i></a>
                         </div>
                         <ul class="submenu">
                             <li><a href="#" onclick="tpHCM()">TP. Hồ Chí Minh</a></li>
@@ -188,14 +188,51 @@
 
                 </div>
                 <div class="col-md-12">
-                    <button class="check" onclick="xem()">
-                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
-                    </button>
-                    <div class="lichtap" id="lich">
-                        <ul>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
+<!--                    <button class="check" onclick="xem()">-->
+<!--                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>-->
+<!--                    </button>-->
+<!--                    <div class="lichtap" id="lich">-->
+<!--                        <ul>-->
+<!--                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>-->
+<!--                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+                    <div class="custom-select">
+                        <ul class="menucities">
+                            <li>
+                                <button class="check" onclick="xem()">
+                                    Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
+                                </button>
+                                <ul class="submenu">
+                                    <div class="lichtap">
+                                        <li><a href="#" class="fa fa-file-pdf-o">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <rect width="2" height="2" x="11" y="6" rx=".5"/>
+                                                </svg>
+                                                :  13/07 - 19/07/2020</a></li>
+                                        <li><a href="#" class="fa fa-file-pdf-o">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <rect width="2" height="2" x="11" y="6" rx=".5"/>
+                                                </svg>
+                                                :  06/07 - 12/07/2020</a></li>
+                                    </div>
+                                </ul>
+                            </li>
                         </ul>
+                        <script>
+                            $(".menucities > li").bind("mouseenter",function () {
+                                $(".submenu").hide();
+                                // this la li khi dua chuot vao
+                                $(this).children(".submenu").slideDown();
+                            });
+                            $(".menucities > li").bind("mouseleave",function () {
+                                $(".submenu").hide();
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -213,14 +250,42 @@
 
                 </div>
                 <div class="col-md-12">
-                    <button class="check" onclick="xem2()">
-                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
-                    </button>
-                    <div class="lichtap" id="lich2">
-                        <ul>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
+                    <div class="custom-select">
+                        <ul class="menucities">
+                            <li>
+                                <button class="check" onclick="xem()">
+                                    Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
+                                </button>
+                                <ul class="submenu">
+                                    <div class="lichtap">
+                                        <li><a href="#" class="fa fa-file-pdf-o">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <rect width="2" height="2" x="11" y="6" rx=".5"/>
+                                                </svg>
+                                                :  13/07 - 19/07/2020</a></li>
+                                        <li><a href="#" class="fa fa-file-pdf-o">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <rect width="2" height="2" x="11" y="6" rx=".5"/>
+                                                </svg>
+                                                :  06/07 - 12/07/2020</a></li>
+                                    </div>
+                                </ul>
+                            </li>
                         </ul>
+                        <script>
+                            $(".menucities > li").bind("mouseenter",function () {
+                                $(".submenu").hide();
+                                // this la li khi dua chuot vao
+                                $(this).children(".submenu").slideDown();
+                            });
+                            $(".menucities > li").bind("mouseleave",function () {
+                                $(".submenu").hide();
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -369,15 +434,6 @@
         document.getElementById("demo2").style.display = "none";
     }
 </script>
-<script type="text/javascript">
-    function xem() {
-        document.getElementById("lich").style.display = "block";
-    }
-</script>
-<script type="text/javascript">
-    function xem2() {
-        document.getElementById("lich2").style.display = "block";
-    }
-</script>
+
 </body>
 </html>

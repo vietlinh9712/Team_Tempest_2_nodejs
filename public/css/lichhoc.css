@@ -215,6 +215,7 @@ hr.short-red-line{
 }
 .buttons a.cool-btn-cta:hover{
     color: #000;
+    text-decoration: none;
 }
 
 
@@ -352,7 +353,6 @@ hr.short-red-line{
     display: block;
 }
 .lichtap{
-    display: none;
     border: solid 1px black;
     margin: 0 150px;
     border-radius: 5px;
