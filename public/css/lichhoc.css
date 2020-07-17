@@ -319,6 +319,7 @@ hr.short-red-line{
     margin-top: 20px;
     font-size: 15px;
     color: #0f0f0f;
+    text-align: center;
 }
 .submenu{
     border: solid 1px black;
@@ -415,4 +416,7 @@ hr.short-red-line{
 }
 .list-unstyled{
     font-size: 12px;
+}
+.tp{
+    display: none;
 }
