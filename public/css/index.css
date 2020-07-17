@@ -289,3 +289,11 @@ footer .wrap-footer{
     margin: 20px;
     transition: all 500ms;
 }
+li a:hover{
+    color: white;
+    text-decoration: none;
+}
+.header li a:visited{
+    color: white;
+    text-decoration: underline black;
+}
