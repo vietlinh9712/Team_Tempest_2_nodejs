@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/footer.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <%- include("head")%>
 </head>
 <body>
@@ -30,34 +28,23 @@
 
         <div class="city col-md-4">
             <div class="custom-select">
-                <ul class="menucities">
-                    <li>
-                        <div class="chontp">
-                            <a href="#">Chọn Thành Phố </a>
+                <div class="col form-group">
+                    <div class="wrap-select">
                         </div>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="tpHCM()">TP. Hồ Chí Minh</a></li>
-                            <li><a href="#" onclick="tpHN()">Hà Nội</a></li>
-                            <li><a href="#" onclick="danang()">Đà Nẵng</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <script>
-                    $(".menucities > li").bind("mouseenter",function () {
-                        $(".submenu").hide();
-                        // this la li khi dua chuot vao
-                        $(this).children(".submenu").slideDown();
-                    });
-                    $(".menucities > li").bind("mouseleave",function () {
-                        $(".submenu").hide();
-                    });
-                </script>
+                        <div class="col-md-12">
+                            <select style="display: block !important;" id="city" onchange="getCities()" class="form-control" name="select">
+                                <option value="">Chọn Thành Phố</option>
+                                <option value="1">Hồ Chí Minh</option>
+                                <option value="2">Hà Nội</option>
+                                <option value="3">Đà Nẵng</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="space col-md-4">
-            &nbsp;
-        </div>
-        <div id="demo" class="tphcm col-md-12">
+
+        <div id="value1" class="tp col-md-12">
             <div class="strike">
                 <h2 class="red">
                     TP. HỒ CHÍ MINH
@@ -116,7 +103,7 @@
             </div>
         </div>
 
-        <div id="demo2" class="tphn col-md-12">
+        <div id="value2" class="tp col-md-12">
             <div class="strike">
                 <h2 class="red">
                     Hà Nội
@@ -175,65 +162,38 @@
             </div>
         </div>
 
-        <div id="demo3" class="danang col-md-12">
+        <div id="value3" class="tp col-md-12">
             <div class="strike">
                 <h2 class="red">
                     QUẬN THANH KHÊ
                 </h2>
             </div>
-            <div class="loc-yoga col-md-6">
-                <img src="image/loc-yoga.png" height="345" width="345"/>
-                <h4 class="text">YOGA</h4>
-                <div class="col-md-12" style="height: 50px;">
-
+            <div class="container">
+                <div class="loc-yoga col-md-6">
+                        <img src="image/loc-yoga.png" width="100%"/>
+                        <h4 class="text">YOGA</h4>
+                    <div style="margin: 0 auto; width: 200px">
+                        <button class="btnt" type="submit">
+                            <a href="#">ĐĂNG KÍ NGAY</a>
+                        </button></div>
                 </div>
-                <div class="col-md-12">
-                    <button class="check" onclick="xem()">
-                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
-                    </button>
-                    <div class="lichtap" id="lich">
-                        <ul>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
-                        </ul>
+                <div class="loc-gruopx col-md-6">
+                    <img src="image/loc-groupx.png" width="100%"/>
+                    <h4 class="text">GROUP X</h4>
+
+                    <div class="col-md-12">
+                        <div style="margin: 0 auto; width: 200px">
+                        <button class="btnt" type="submit">
+                            <a href="#">ĐĂNG KÍ NGAY</a>
+                        </button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <button class="btnt" type="submit">
-                        <a href="#">ĐĂNG KÍ NGAY</a>
-                    </button>
-                </div>
             </div>
-
-
-            <div class="loc-gruopx col-md-6">
-                <img src="image/loc-groupx.png" height="345" width="345"/>
-                <h4 class="text">GROUP X</h4>
-                <div class="col-md-12" style="height: 50px;">
-
-                </div>
-                <div class="col-md-12">
-                    <button class="check" onclick="xem2()">
-                        Xem <i class="fa fa-caret-down" style="color: red;font-size: 20px;"></i>
-                    </button>
-                    <div class="lichtap" id="lich2">
-                        <ul>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>13/07 - 19/07/2020</a></li>
-                            <li><a href="#" class="fa fa-file-pdf-o"></i>06/07 - 12/07/2020</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button class="btnt" type="submit">
-                        <a href="#">ĐĂNG KÍ NGAY</a>
-                    </button>
-                </div>
-            </div>
-
         </div>
 
         <div class="thuonghieu col-md-12" style="margin-top: 50px;">
-            <h3>Các thương hiệu liên kết khác </h3>
+            <h3 style="text-align: center !important;">Các thương hiệu liên kết khác </h3>
             <hr class="short-red-line">
 
         </div>
@@ -337,47 +297,28 @@
 <%- include("footer")%>
 
 <script type="text/javascript" src="Js/index1.js"></script>
-<script type="text/javascript" src="libs/nivo-slider/demo/scripts/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="libs/nivo-slider/jquery.nivo.slider.js"></script>
 <script type="text/javascript" src="Js/jQuery.js"></script>
 
-<script>
-    $(".selectcity > li").bind("mouseenter",function () {
-        $(".cityname").hide();
+<script type="text/javascript">
+    function getCities() {
+       // alert($( ".tp").val());
+        $('.tp').hide();
+        var ID= 'value'+ $( "#city").val();
+        console.log(ID);
+       //  $("#value1").show();
+       //  $('.tp').show();
+        $("#"+ID+"").show();
+    }
+    $(".menucities > li").bind("mouseenter",function () {
+        $(".submenu").hide();
         // this la li khi dua chuot vao
-        $(this).children(".cityname").slideDown();
+        $(this).children(".submenu").slideDown();
     });
-    $(".selectcity > li").bind("mouseleave",function () {
-        $(".cityname").hide();
+    $(".menucities > li").bind("mouseleave",function () {
+        $(".submenu").hide();
     });
 </script>
 
-<script type="text/javascript">
-    function tpHCM() {
-        document.getElementById("demo").style.display = "block";
-        document.getElementById("demo2").style.display = "none";
-        document.getElementById("demo3").style.display = "none";
-    }
-    function tpHN() {
-        document.getElementById("demo2").style.display = "block";
-        document.getElementById("demo").style.display = "none";
-        document.getElementById("demo3").style.display = "none";
-    }
-    function danang() {
-        document.getElementById("demo3").style.display = "block";
-        document.getElementById("demo").style.display = "none";
-        document.getElementById("demo2").style.display = "none";
-    }
-</script>
-<script type="text/javascript">
-    function xem() {
-        document.getElementById("lich").style.display = "block";
-    }
-</script>
-<script type="text/javascript">
-    function xem2() {
-        document.getElementById("lich2").style.display = "block";
-    }
-</script>
+
 </body>
 </html>

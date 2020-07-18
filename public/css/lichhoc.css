@@ -215,6 +215,7 @@ hr.short-red-line{
 }
 .buttons a.cool-btn-cta:hover{
     color: #000;
+    text-decoration: none;
 }
 
 
@@ -318,6 +319,7 @@ hr.short-red-line{
     margin-top: 20px;
     font-size: 15px;
     color: #0f0f0f;
+    text-align: center;
 }
 .submenu{
     border: solid 1px black;
@@ -352,10 +354,9 @@ hr.short-red-line{
     display: block;
 }
 .lichtap{
-    display: none;
     border: solid 1px black;
-    margin: 0 150px;
     border-radius: 5px;
+    margin: 0 50px;
 }
 .lichtap a{
     text-decoration: none;
@@ -412,4 +413,10 @@ hr.short-red-line{
 }
 .chontp a{
     color: white;
+}
+.list-unstyled{
+    font-size: 12px;
+}
+.tp{
+    display: none;
 }
