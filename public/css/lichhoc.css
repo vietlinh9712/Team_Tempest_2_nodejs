@@ -423,3 +423,16 @@ hr.short-red-line{
 .log-yoga img{
     margin: 20px;
 }
+.practice ul{
+    margin-top: 20px;
+}
+.practice ul li{
+    text-align: center;
+    font-size: 20px;
+}
+.practice ul li a:hover{
+    color: red;
+}
+.date{
+    border: solid 2px black;
+}
